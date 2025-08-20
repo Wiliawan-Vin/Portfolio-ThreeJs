@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter} from "next/font/google";
 import "./globals.css";
 import StarCanvas from "@/components/main/StarBackground";
+import Navbar from "@/components/main/Navbar";
 
 const interFont = Inter({
   variable: "--font-inter-font",
@@ -23,6 +24,7 @@ export default function RootLayout({
         className={`${interFont.variable} bg-[#030014] relative overflow-y-scroll overflow-x-hidden`}
       >
         <StarCanvas />
+        <Navbar /> 
         {children}
       </body>
     </html>

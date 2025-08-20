@@ -3,13 +3,13 @@ import {motion} from 'framer-motion'
 import { slideInFromLeft,slideInFromRight,slideInFromTop } from '@/utils/motion'
 import { SparklesIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
-import { Button } from '../ui/button'
+
 const HeroContent = () => {
   return (
     <motion.div
     initial ='hidden'
     animate = 'visible'
-    className='flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]'>
+    className='flex flex-row items-center justify-center px-20 mt-40 w-full z-[20] '>
         <div className='h-full w-full flex flex-col gap-5 justify-center m-auto text-start'>
             <motion.div
             variants={slideInFromTop}
@@ -29,7 +29,7 @@ const HeroContent = () => {
             <motion.p
             className='text-lg text-gray-500 my-5 max-w-[600px]'
             variants={slideInFromLeft(0.8)}>
-              I'm a Website and Mobile App Front End developer with mostly experience in build website's and mobile's Front End. Check out my projects.
+              Im a Website and Mobile App Front End developer with mostly experience in build websites and Mobile Front End. Check out my projects.
             </motion.p>
               <motion.button
               variants={slideInFromLeft(1)}
